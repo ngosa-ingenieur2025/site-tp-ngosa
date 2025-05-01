@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma Liste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Centrer tout le contenu du conteneur */
+        }
+        h1 {
+            color: blue;
+            margin-bottom: 30px;
+            animation: slideLeftRight 10s linear infinite; /* Animation horizontale */
+        }
+        .list-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centrer les listes */
+        }
+        .list {
+            width: 50%; /* Ajuste la largeur des listes pour qu'elles ne soient pas trop larges */
+            list-style-type: disc;
+            font-size: 18px;
+            text-align: left; /* Texte aligné à gauche dans la liste */
+            margin: 0 auto 20px auto; /* Centrer les listes et espacer entre elles */
+            padding-left: 20px; /* Ajoute du padding à gauche pour un meilleur espacement */
+        }
+        .list li {
+            margin: 8px 0;
+        }
+        h2 {
+            margin-top: 20px;
+            font-size: 30px;
+            color: rgb(16, 16, 16);
+            
+        }
+         /* Animation de gauche à droite */
+         @keyframes slideLeftRight {
+            0% {
+                transform: translateX(100%); /* Commence à droite */
+            }
+            100% {
+                transform: translateX(-100%); /* Va vers la gauche */
+            }
+        }
+        .back-link {
+            margin-top: 30px;
+        }
+        .back-link a {
+            color: white;
+            background-color: blue;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .back-link a:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Ma Liste</h1>
+
+    <div class="list-container">
+        <!-- Liste des étudiants -->
+     
+        <ul class="list">
+            <li> <h2>1. Liste des étudiants  </h2></li>
+            <ul>
+            <li>Étudiant 1 : Michel Dupond</li>
+            <li>Étudiant 2 : Amélie Dupuis</li>
+            <li>Étudiant 3 : Thierry Ngosa</li>
+            <li>Étudiant 4 : Marie Dupont</li>
+            <li>Étudiant 5 : Jean-Claude Lebrun</li>
+            <li>Étudiant 6 : Sophie Martin</li>
+            <li>Étudiant 7 : Clara Lemoine</li>
+            <li>Étudiant 8 : Paul Moreau</li>
+            <li>Étudiant 9 : Lucie Lefevre</li>
+            <li>Étudiant 10 : Antoine Richard</li>
+        </ul>
+        </ul>
+
+        <!-- Liste des enseignants -->
+        <h2></h2>
+        <ul class="list">
+            <li> <h2>2. Liste des enseignants </h2></li>
+            <ul>
+            <li>Professeur 1 : Dr. Emmanuel Verdi</li>
+            <li>Professeur 2 : Mme. Claire Legrand</li>
+            <li>Professeur 3 : M. Albert Toussaint</li>
+            <li>Professeur 4 : Mme. Laure Lambert</li>
+            <li>Professeur 5 : M. Jacques Charpentier</li>
+            <li>Professeur 6 : Mme. Isabelle Lefevre</li>
+            <li>Professeur 7 : Dr. Bernard Dupuis</li>
+            <li>Professeur 8 : M. Thierry Dufresne</li>
+            <li>Professeur 9 : Mme. Charlotte Roux</li>
+            <li>Professeur 10 : Dr. Nicolas Caron</li>
+        </ul>
+    </ul>
+    </div>
+
+    <!-- Lien suivant pour passer à la page Ma Video -->
+    <div class="next-page">
+        <a style="background-color: blue; color: white; border-radius: 2px;" href="ma-vidéo.html" class="suivant">Suivant ➡️</a>
+    </div>
+</div>
+
+</body>
+</html>

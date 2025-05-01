@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Affichage Profil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Couleur de fond de la page */
+            margin: 0;
+            padding: 0;
+        }
+        .rectangle {
+            background-color: rgb(20, 20, 20);
+            color: white;
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .info, .photo {
+            width: 45%;
+        }
+        .info h2, .photo h2 {
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+        .info p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .photo img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid white;
+        }
+        .suivant {
+            display: block;
+            width: 150px;
+            text-align: center;
+            background-color: white;
+            color: rgb(9, 9, 10);
+            padding: 10px;
+            margin: 30px auto 0;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .suivant:hover {
+            background-color: lightblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="rectangle">
+    <div class="container">
+        <div class="info">
+            <h2>IDENTITE</h2>
+            <p><strong>Nom :</strong> NGOSA</p>
+            <p><strong>Postnom :</strong> LUBEKA</p>
+            <p><strong>Prénom :</strong> THIERRY</p>
+            <p><strong>Sexe :</strong> Masculin</p>
+            <p><strong>Lieu de naissance :</strong> KAKYELO</p>
+            <p><strong>Date de naissance :</strong> Le 06 août 2004</p>
+            <p><strong>Nom du père :</strong> MALIPILO</p>
+            <p><strong>Nom de la mère :</strong> MWAPE</p>
+        </div>
+        <div class="photo">
+            <h2>PHOTO</h2>
+            <img src="photo.jpg" alt="Logo du site" width="300">
+        </div>
+    </div>
+
+    <!-- Lien vers la deuxième page -->
+    <a href="ma-liste.html" class="suivant">Suivant ➡️</a>
+</div>
+
+</body>
+</html>
